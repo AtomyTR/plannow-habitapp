@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "PlanNow",
+    "slug": "plannow",
+    "scheme": "plannow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yigitakinkaya.plannow",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.yigitakinkaya.plannow",
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "permissions": [
+        "android.permission.SCHEDULE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/PlusJakartaSans_400Regular.ttf",
+            "./assets/fonts/PlusJakartaSans_500Medium.ttf",
+            "./assets/fonts/PlusJakartaSans_600SemiBold.ttf",
+            "./assets/fonts/PlusJakartaSans_700Bold.ttf",
+            "./assets/fonts/PlusJakartaSans_800ExtraBold.ttf"
+          ]
+        }
+      ],
+      "expo-notifications",
+      "@react-native-community/datetimepicker"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "abe22fe5-e53f-4beb-85df-0c848b796292"
+      }
+    },
+    "owner": "atomcan"
+  }
+}
